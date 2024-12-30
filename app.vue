@@ -1,9 +1,9 @@
 <template>
   <div>
-    app
-    <!-- <NuxtLayout>
+  
+    <NuxtLayout>
       <NuxtPage />
-    </NuxtLayout> -->
+    </NuxtLayout>
     <!-- <NuxtRouteAnnouncer />
     <NuxtWelcome /> -->
   </div>
