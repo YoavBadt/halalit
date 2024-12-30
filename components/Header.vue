@@ -1,7 +1,12 @@
 <template>
-    <div class="header_comp">
-        <h1 class="header_comp_headline">{{title1}} <span>{{title2}}</span></h1>
-    </div>
+    <section class="header_comp">
+        <div class="wrapper">
+            <div class="header_comp_box">
+
+                <h1 class="header_comp_headline">{{title1}} <span>{{title2}}</span></h1>
+            </div>
+        </div>
+    </section>
 </template>
 <script>
 export default {
@@ -11,12 +16,17 @@ export default {
 <style>
 .header_comp{
     width:100%;
-    height:50vh;
+    height:25vh;
+    
+    /* border-bottom:1px solid lightgrey; */
+}
+.header_comp_box{
+    width:100%;
+    height:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom:1px solid rgba(0,0,0,0.25);
 }
 .header_comp_headline{
     font-size:52px;

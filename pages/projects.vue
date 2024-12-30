@@ -1,23 +1,21 @@
 <template>
-    <div class="wrapper">
         <Header title1="Our" title2="Projects"/>
-        <div class="projects_gallery">
-            <ContentList path="/projects" v-slot="{ list }">
-                <div v-for="project in list" :key="project._path" class="project_box">
-                    <RouterLink :to="project._path">
-                        <div class="project_img_box">
-                            <img class="project_img" :src="project.cover">
-                            <!-- <img class="project_img" src="https://tikz.net/efra/dodecahedron.png"> -->
-                        </div>
-                        <h2 class="project_headline">{{ project.name }}</h2>
-                        <!-- <p>{{ project.description }}</p> -->
-                    </RouterLink>
-                </div>
-            </ContentList>
-
-            
+        <div class="wrapper">
+            <div class="projects_gallery">
+                <ContentList path="/projects" v-slot="{ list }">
+                    <div v-for="project in list" :key="project._path" class="project_box">
+                        <RouterLink :to="project._path">
+                            <div class="project_img_box">
+                                <img class="project_img" :src="project.cover">
+                                <!-- <img class="project_img" src="https://tikz.net/efra/dodecahedron.png"> -->
+                            </div>
+                            <h2 class="project_headline">{{ project.name }}</h2>
+                            <!-- <p>{{ project.description }}</p> -->
+                        </RouterLink>
+                    </div>
+                </ContentList>
+            </div>
         </div>
-    </div>
 </template>
 
 <script>

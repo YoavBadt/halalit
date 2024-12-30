@@ -33,23 +33,29 @@ export default {
             isMain : true   
         }
     },
-    watch: {
-    $route(to, from) {
-      if(to.path.split('/')[1] === 'projects'){
+    methods:{
+      determine(path){
+        if(path.split('/')[1] === 'projects'){
         this.isActive = true
       }else{
         this.isActive = false
       }
-      if(to.path === '/'){
+      if(path === '/'){
         this.isMain = true
       }else{
         this.isMain = false
       }
+      }
     },
-    created(){
-        // this.title = ''
-    }
-}
+    watch: {
+    $route(to, from) {
+      this.determine(to.path)
+    },
+  },
+  created(){
+    // console.log(this.$route.path)
+    this.determine(this.$route.path)
+  }
 }
 </script>
 

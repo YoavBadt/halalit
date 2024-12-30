@@ -11,7 +11,7 @@
         </div>
       </section>
 
-      <section class="main_section" style="background-color: #2d2626">
+      <section class="main_section" >
         <div class="wrapper">
           <h4 class="main_section_headline">Technological Services</h4>
           <p class="main_section_txt" >We offer a variety of technological solutions and services in the following fields</p>
@@ -29,6 +29,18 @@
           <p class="main_section_txt" >We work with...</p>
           <div class="systems">
             <div class="systems_box" v-for="item in systems">{{ item.name }}</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="main_section" >
+
+        <div class="wrapper">
+          <h4 class="main_section_headline">Our Clients</h4>
+          <p class="main_section_txt" >We work with...</p>
+          <div class="systems">
+            <div class="systems_box" v-for="item in clients">{{ item.name }}</div>
           </div>
         </div>
 
@@ -73,6 +85,23 @@
                 {
                   name : 'Welding & Plasma cutting'
                 }
+              ],
+              clients : [
+                {
+                  name : 'Iai'
+                },
+                {
+                  name : 'Shufersal'
+                },
+                {
+                  name : 'enercon'
+                },
+                {
+                  name : 'tigi'
+                },
+                {
+                  name : 'straus'
+                }
               ]    
           }
       }
@@ -83,7 +112,7 @@
 <style>
   
   .main_section{
-    min-height:60vh;
+    min-height:90vh;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -92,9 +121,12 @@
     padding-bottom:50px;
     color: lightgrey;
     
-    background-color: #4a3e3e;
-    border-bottom:1px solid rgba(211, 211, 211,0.1);
+    background-color: #2d2626;
+    /* border-bottom:1px solid rgba(211, 211, 211,0.1); */
     /* outline:1px solid rgba(0,0,0,0.1); */
+  }
+  .main_section:nth-child(odd){
+    background-color: #4a3e3e
   }
   .services{
     width:100%;
@@ -111,13 +143,13 @@
     padding:20px;
     font-size:14px;
     line-height:20px;
-    text-align:left;
+    text-align:center;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
     display:flex;
-    /* align-items:center; */
-    /* justify-content:center; */
+    align-items:center;
+    justify-content:center;
     /* background:violet; */
     border:1px solid rgba(211, 211, 211,0.5);
     border-radius:10px;
@@ -133,7 +165,8 @@
     height:10px;
     width:10px;
     border-radius:50%;
-    background:lightgrey;
+    border:1px solid lightgrey;
+    background-color: #2d2626;
   }
   .systems{
     width:100%;
