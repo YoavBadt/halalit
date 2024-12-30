@@ -1,12 +1,12 @@
 <template >
-    <div>
+    
        <TopBar/>
        
         <slot/>
         
 
        <Footer/>
-    </div>
+    
 </template>
 
 <script>

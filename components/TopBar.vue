@@ -13,7 +13,11 @@
             </nav>
         </div>
         <!-- <h2 class="page_title">{{title}}</h2> -->
-        <h1 :class="[{logo_main: isMain},'logo']">Studio<br/>Halalit</h1>
+        <h1 :class="[{logo_main: isMain},'logo']">
+          
+            Studio<br/>Halalit
+          
+        </h1>
 
       </div>
     </div>
@@ -61,7 +65,7 @@ export default {
 }
 .topbar_main{
   background-color: #4a3e3e;
-  border-bottom:1px solid rgba(211, 211, 211,0.1)
+  border-bottom:1px solid #2d2626
 }
 .topbar_wrapper{
   height:100%;

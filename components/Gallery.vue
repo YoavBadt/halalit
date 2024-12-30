@@ -1,7 +1,8 @@
 <template >
     <div class="project_gallery">
         <ContentList path="/projects" v-slot="{ list }">
-                <div v-for="project in list" :key="project._path" class="project_gallery_box">
+            <template v-for="(project,index) in list" :key="project._path">
+                <div v-if="index < 3" class="project_gallery_box">
                     <RouterLink :to="project._path">
                         <div class="project_gallery_img_box">
                             <img class="project_gallery_img" v-if="project.cover" :src="project.cover" alt="no image">
@@ -10,6 +11,7 @@
                         <p>{{ project.description }}</p>
                     </RouterLink>
                 </div>
+            </template>
             </ContentList>
     </div>
 </template>
