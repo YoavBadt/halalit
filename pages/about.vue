@@ -1,40 +1,34 @@
 <template>
-    <div class="wrapper">
-      <div class="reg_hero">
-        <h1 class="main_hero_headline">About <span>Studio Halalit</span></h1>
-      </div>
+    <div>
+      <Header title1="About" title2="Studio Halalit"/>
       
-      <ContentList path="/_about" v-slot="{ list }">
-      <div v-for="item in list" :key="item._path" class="about_content">
-        <div>
-          <img class="about_img" :src="item.img">
-        </div>
-        <div>
-          <h2>{{ item.name }}</h2>
-          <p>{{ item.description }}</p>
-        </div>
-      </div>
-      </ContentList>
+      <div class="wrapper">
 
-
-
-      <div class="about_content">
-        <!-- <ContentDoc></ContentDoc> -->
+        <ContentList path="/_about" v-slot="{ list }">
+          <div v-for="item in list" :key="item._path" class="about_content">
+            <div>
+              <img class="about_img" :src="item.img">
+            </div>
+            <div>
+              <h2>{{ item.name }}</h2>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        </ContentList>
       </div>
     </div>
   </template>
-  
-  <style>
-  .reg_hero{
-    width:100%;
-    height:50vh;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-bottom:1px solid rgba(0,0,0,0.25);
-  }
 
+<script>
+import Header from './components/Header.vue'
+export default {
+
+}
+
+
+</script>
+
+<style>
   .about_content{
     width:75%;
     margin: 10vh auto;
@@ -76,4 +70,4 @@
       align-items: center;
     }
   } */
-  </style>
+</style>

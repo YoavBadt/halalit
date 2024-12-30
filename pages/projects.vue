@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <Header/>
+        <Header title1="Our" title2="Projects"/>
         <div class="projects_gallery">
             <ContentList path="/projects" v-slot="{ list }">
                 <div v-for="project in list" :key="project._path" class="project_box">

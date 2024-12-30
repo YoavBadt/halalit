@@ -1,17 +1,22 @@
 <template >
-    <header class="topbar">
+  
+    <div :class="[{topbar_main: isMain},'topbar']">
+      <div class="wrapper topbar_wrapper">
+        
         <div class="hamburger">
             <!-- <div class="ham_icon">X</div> -->
-            <nav>
-            <RouterLink to="/">Main</RouterLink>
-            <RouterLink to="/projects" :class="{ a_active: isActive }">Projects</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-            <RouterLink to="/contact">Contact</RouterLink>
+            <nav >
+              <RouterLink to="/">Main</RouterLink>
+              <RouterLink to="/projects" :class="{ a_active : isActive, nav_a_main: isMain}">Projects</RouterLink>
+              <RouterLink to="/about"    :class="{nav_a_main: isMain}" >About</RouterLink>
+              <RouterLink to="/contact"  :class="{nav_a_main: isMain}" >Contact</RouterLink>
             </nav>
         </div>
         <!-- <h2 class="page_title">{{title}}</h2> -->
-        <h1 class="logo">Studio<br/>Halalit</h1>
-    </header>
+        <h1 :class="[{logo_main: isMain},'logo']">Studio<br/>Halalit</h1>
+
+      </div>
+    </div>
 </template>
 
 <script>
@@ -20,16 +25,21 @@ export default {
     data(){
         return{
             title : '', 
-            isActive : false   
+            isActive : false,
+            isMain : true   
         }
     },
     watch: {
     $route(to, from) {
-      console.log()
       if(to.path.split('/')[1] === 'projects'){
         this.isActive = true
       }else{
         this.isActive = false
+      }
+      if(to.path === '/'){
+        this.isMain = true
+      }else{
+        this.isMain = false
       }
     },
     created(){
@@ -47,13 +57,18 @@ export default {
   top:0;
   background:#e7e7e7;
   z-index:10;
-  border-bottom:1px solid rgba(0,0,0,0.25);  
+  border-bottom:1px solid lightgrey;
+}
+.topbar_main{
+  background-color: #4a3e3e;
+  border-bottom:1px solid rgba(211, 211, 211,0.1)
+}
+.topbar_wrapper{
+  height:100%;
   display:flex;
   flex-direction:row;
   align-items: center;  
   justify-content : space-between; 
-  /* line-height: 1.5;
-  max-height: 100vh; */
 }
 
 .page_title{
@@ -67,18 +82,15 @@ export default {
     font-family: "Homenaje";
     font-weight: 300;
     font-size:26px;
-    color:rgba(0,0,0,0.6);
     letter-spacing: 1px;
     text-align:right;
     text-transform:uppercase;
 }
-
+.logo_main{
+  color:lightgrey;
+}
 nav {
-  /* display:none;   */
-  /* width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem; */
+
 }
 .a_active{
   color:violet
@@ -94,10 +106,10 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  /* display: inline-block; */
-  /* padding: 0 1rem; */
   padding-right:10px;
-  /* border-left: 1px solid var(--color-border); */
+}
+.nav_a_main{
+  color:lightgrey;
 }
 
 

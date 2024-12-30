@@ -1,30 +1,42 @@
 <template>
-    <div class="wrapper">
-      <div style="height:90vh;" class="main_hero">
-        <h1 style="height:40vh" class="main_hero_headline"><span>We're Studio Halalit,</span> we are an <br/>Engineering & Industrial design hub.<br/>We like to build things.</h1>
-        <h2 class="main_hero_h2">From single Proof Of Concept, to Small scale manufacturing to fully industrial products. We specialize in robust and rapid prototyping, with local small scale manufacturing capabilities and experience in escorting fully industrial product manufacturing.</h2>
-      </div>
-
+    <div >
+      <Mheader />
+      
       <section class="main_section">
-        
+        <div class="wrapper">
+          <h4 class="main_section_headline">Our Projects</h4>
+          <p class="main_section_txt" >Here is a sample of our projects</p>
+          <Gallery/>
+          <Mbutton txt="see more of our projects" link="/projects"/>
+        </div>
       </section>
 
-      <section class="main_section">
-        <div class="main_section_1">
-          <div>
-            <h4 class="main_section_headline">Our Services</h4>
-            <p class="main_section_txt" v-for="item in bullets"><span></span>{{item}}</p>
+      <section class="main_section" style="background-color: #2d2626">
+        <div class="wrapper">
+          <h4 class="main_section_headline">Our Services</h4>
+          <p class="main_section_txt" >We offer a variety of technological solutions and services</p>
+          <div class="services">
+            <div class="services_box" v-for="item in bullets"><span></span>{{ item }}</div>
           </div>
-        </div>
-        <div class="main_section_2">
-          something
-        </div>
+          <Mbutton txt="contact us for more details" link="/contact"/>
+        
+          
+          
+            
+            
+          
+        
+        
+      </div>
       </section>
     </div>
       <!-- <TheWelcome /> -->
   </template>
   
   <script >
+  import Mheader from './components/Mheader.vue'
+  import Gallery from './components/Gallery.vue'
+  import Mbutton from './components/Mbutton.vue'
   export default {
       data(){
           return{
@@ -37,46 +49,57 @@
   
   <style>
   
-  .main_hero{
-    width:100%;
-    
+  .main_section{
+    min-height:60vh;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom:1px solid rgba(0,0,0,0.25); 
-  }
-  .main_hero_headline{
-    font-size:52px;
-    line-height:1.2;
-    font-weight: 200;
-    text-align:center;
-    width:75%;
-    margin:0 auto;
-  }
-  .main_hero_headline span{
-    font-weight: 600;
-    color:violet;
-  }
-  .main_hero_h2{
-    width:70%;
-    margin:0 auto;
-    font-size : 24px;
-    line-height: 32px;
-    font-weight: 300;
-    text-transform: ;
-    text-align: justify;
-    text-align-last: center;
-    
-  }
-  .main_section{
-    width:85%;
-    /* height:50vh; */
-    margin:0 auto 100px auto;
-    
-    display: flex;
+    padding-top:50px;
+    padding-bottom:50px;
+    color: lightgrey;
+    background-color: #4a3e3e;
+    border-bottom:1px solid rgba(211, 211, 211,0.1);
     /* outline:1px solid rgba(0,0,0,0.1); */
-    border-radius:5px;
+  }
+  .services{
+    width:100%;
+    margin-top:50px;
+    margin-bottom:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:4%;
+  }
+  .services_box{
+    width:22%;
+    height:80px;
+    margin-bottom:20px;
+    padding:20px;
+    font-size:14px;
+    line-height:20px;
+    text-align:left;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display:flex;
+    /* align-items:center; */
+    /* justify-content:center; */
+    /* background:violet; */
+    border:1px solid rgba(211, 211, 211,0.5);
+    border-radius:10px;
+    position:relative;
+  }
+  .services_box span{
+    position:absolute;
+    left:-5px;
+    top:-5px;
+    display: inline-block;
+    margin-right:10px;
+    margin-bottom:2px;
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    background:lightgrey;
   }
   .main_section_1{
     width:50%;
@@ -103,14 +126,7 @@
     font-weight: 400;
     /* letter-spacing:1px; */
   }
-  .main_section_txt span{
-    display: inline-block;
-    margin-right:10px;
-    margin-bottom:2px;
-    height:10px;
-    width:10px;
-    border-radius:50%;
-    background:lightgrey;
-  }
+ 
+ 
   </style>
   
