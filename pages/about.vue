@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-      <div class="main_hero">
+      <div class="reg_hero">
         <h1 class="main_hero_headline">About <span>Studio Halalit</span></h1>
       </div>
       
@@ -25,9 +25,19 @@
   </template>
   
   <style>
+  .reg_hero{
+    width:100%;
+    height:50vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+  }
+
   .about_content{
     width:75%;
-    margin: 0 auto;
+    margin: 10vh auto;
     display:flex;
     gap:52px;
   }

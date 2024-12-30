@@ -1,5 +1,6 @@
 <template>
     <div class="wrapper">
+        <Header/>
         <div class="projects_gallery">
             <ContentList path="/projects" v-slot="{ list }">
                 <div v-for="project in list" :key="project._path" class="project_box">
@@ -20,6 +21,7 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
 export default {
 
 }

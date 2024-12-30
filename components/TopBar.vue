@@ -41,7 +41,7 @@ export default {
 
 <style >
 .topbar {
-  height:100px;
+  height:10vh;
   width:100%;
   position:sticky;
   top:0;

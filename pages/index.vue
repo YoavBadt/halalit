@@ -1,13 +1,12 @@
 <template>
     <div class="wrapper">
-      <div class="main_hero">
-        
-        <h1 class="main_hero_headline"><span>We're Studio Halalit,</span> we are an <br/>Engineering & Industrial design hub.<br/>We like to build things.</h1>
+      <div style="height:90vh;" class="main_hero">
+        <h1 style="height:40vh" class="main_hero_headline"><span>We're Studio Halalit,</span> we are an <br/>Engineering & Industrial design hub.<br/>We like to build things.</h1>
+        <h2 class="main_hero_h2">From single Proof Of Concept, to Small scale manufacturing to fully industrial products. We specialize in robust and rapid prototyping, with local small scale manufacturing capabilities and experience in escorting fully industrial product manufacturing.</h2>
       </div>
 
       <section class="main_section">
         
-        <h2 class="main_hero_h2">From single Proof Of Concept, to Small scale manufacturing to fully industrial products. We specialize in robust and rapid prototyping, with local small scale manufacturing capabilities and experience in escorting fully industrial product manufacturing.</h2>
       </section>
 
       <section class="main_section">
@@ -40,12 +39,12 @@
   
   .main_hero{
     width:100%;
-    height:50vh;
+    
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin:0 auto; */
+    border-bottom:1px solid rgba(0,0,0,0.25); 
   }
   .main_hero_headline{
     font-size:52px;
@@ -60,7 +59,7 @@
     color:violet;
   }
   .main_hero_h2{
-    width:80%;
+    width:70%;
     margin:0 auto;
     font-size : 24px;
     line-height: 32px;
@@ -72,7 +71,7 @@
   }
   .main_section{
     width:85%;
-    height:50vh;
+    /* height:50vh; */
     margin:0 auto 100px auto;
     
     display: flex;
