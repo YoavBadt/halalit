@@ -1,9 +1,10 @@
 <template >
     <div>
        <TopBar/>
-       
-        <slot/>
-        
+       <div class="wrapper">
+
+        <ContentDoc></ContentDoc>
+       </div>
 
        <Footer/>
     </div>
@@ -11,7 +12,7 @@
 
 <script>
 import Footer from './components/Footer.vue'
-import TopBar from './components/TopBar.vue'
+import Topbar from './components/TopBar.vue'
 export default {
     
 }
