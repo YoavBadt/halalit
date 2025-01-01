@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-    props : ['txt','link'],
+    props : ['txt','link','dark'],
 
 }
 </script>

@@ -1,6 +1,6 @@
 ---
-name : Prosthesis covers
-description : Custom made prosthesis covers
+name : Breathing flowers
+description : Breathing flowers art project
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in urna consectetur, porta magna non, finibus felis. Nunc eget erat non neque commodo faucibus. Vestibulum in dictum nibh. Quisque pellentesque fringilla lacus. Praesent nec velit in justo vestibulum viverra sit amet a nunc. Vestibulum nec bibendum neque. Proin quis congue nulla, et varius dolor. Morbi sodales quis dolor eget vestibulum. Sed vulputate pellentesque convallis.

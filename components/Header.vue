@@ -16,8 +16,8 @@ export default {
 <style>
 .header_comp{
     width:100%;
-    height:25vh;
-    
+    height:20vh;
+    /* background-color: #f6f5f5; */
     /* border-bottom:1px solid lightgrey; */
 }
 .header_comp_box{
@@ -29,15 +29,16 @@ export default {
     justify-content: center;
 }
 .header_comp_headline{
-    font-size:52px;
+    font-size:24px;
     line-height:1.2;
-    font-weight: 200;
-    text-align:center;
-    width:75%;
+    font-weight: 600;
+    text-align:left;
+    width:100%;
     margin:0 auto;
+    
   }
 .header_comp_headline span{
     font-weight: 600;
-    color:violet;
+    /* color:violet */
   }
 </style>

@@ -1,7 +1,7 @@
 ---
 name: Solar Electric Bicycle
 description: Electric bicycle solar charging trailer, designed to allow long
-  distance electrical bicycle touring
+  distance electrical bicycle touring 
 cover: /img/trump.png
 ---
 
