@@ -1,18 +1,16 @@
 ---
-name : about Halalit Studio
+name: about Halalit Studio
 ---
+
 ![my image](/img/about/leon.png)
 
 ## Leon Maryasin
 
-the driving force behind 3DTECH, is a visionary mechanical engineer with a passion for turning ideas into precision-engineered realities. Specializing in cutting-edge CAD design and mechanical drafting, Leon brings creativity and technical mastery to every project. Whether crafting intricate mechanical drawings or designing innovative solutions, he delivers excellence tailored to his clients' unique needs. 
-Leon holds a B.sc In biology and M.Des in Industrial design and technology.
+the driving force behind 3DTECH, is a visionary mechanical engineer with a passion for turning ideas into precision-engineered realities. Specializing in cutting-edge CAD design and mechanical drafting, Leon brings creativity and technical mastery to every project. Whether crafting intricate mechanical drawings or designing innovative solutions, he delivers excellence tailored to his clients' unique needs. Leon holds a B.sc In biology and M.Des in Industrial design and technology.
 
 ## Nir Badt
 
-Nir Badt is a multidisciplinary innovator with expertise spanning hardware design, embedded IoT systems, and energy management solutions. With a passion for rapid prototyping and bringing ideas to life, Nir specializes in turning concepts into manufacturable products. 
-In collaboration with Leon Maryasin, Nir combines cutting-edge technology and engineering brilliance to offer tailored solutions that meet the most demanding challenges. 
-Nir Holds a B.Sc in Physics and Economics, M.Des in Industrial design and technology and Practical certification in Electrical engineering
+Nir Badt is a multidisciplinary innovator with expertise spanning hardware design, embedded IoT systems, and energy management solutions. With a passion for rapid prototyping and bringing ideas to life, Nir specializes in turning concepts into manufacturable products. In collaboration with Leon Maryasin, Nir combines cutting-edge technology and engineering brilliance to offer tailored solutions that meet the most demanding challenges. Nir Holds a B.Sc in Physics and Economics, M.Des in Industrial design and technology and Practical certification in Electrical engineering
 
 ## Viktor Lavron
 
