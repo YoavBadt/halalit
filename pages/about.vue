@@ -31,8 +31,9 @@ export default {
 <style>
   .about_content{
     height:300px;
+    
     border:1px solid lightgrey;
-    background-color: #f6f5f5;
+    /* background-color: #f6f5f5; */
     border-radius:5px;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -40,7 +41,7 @@ export default {
         
     column-gap: 20px;
     row-gap: 20px;
-    margin-bottom:10vh;
+    margin-bottom:20px;
   }
   .about_img_box{
     /* background:Red; */
@@ -52,6 +53,7 @@ export default {
   .about_txt{
     grid-column: 2 / span 2;
     padding:20px 20px 20px 0;
+    
   }
   .about_content img{
     width:100%;
@@ -75,6 +77,7 @@ export default {
     line-height: 24px;
     font-weight: 500;
     color:rgb(70, 70, 70);
+
     /* margin-bottom:100px; */
     /* height:300px; */
 

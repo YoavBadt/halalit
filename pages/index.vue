@@ -4,21 +4,31 @@
       
       <section class="main_section">
         <div class="wrapper">
-          <h4 class="main_section_headline">Projects & Products</h4>
-          <p class="main_section_txt" >Here is a sample of our projects and products that we have developed</p>
-          <Gallery/>
-          <Mbutton txt="see more of our projects" link="/projects"/>
+          <div class="section_grid">
+            <div class="main_section_txt_box">
+              <h4 class="main_section_headline">Projects & Products</h4>
+              <p class="main_section_txt" >Here is a sample of our projects and products that we have developed</p>
+            </div>
+            <Gallery/>
+            <Mbutton class="Mbutton_main" txt="see more of our projects" link="/projects"/>
+
+          </div>
         </div>
       </section>
 
-      <section class="main_section" >
+      <section class="main_section">
         <div class="wrapper">
-          <h4 class="main_section_headline">Technological Services</h4>
-          <p class="main_section_txt" >We offer a variety of technological solutions and services in the following fields</p>
+          <div class="section_grid">
+            <div class="main_section_txt_box">
+              <h4 class="main_section_headline">Technological Services</h4>
+              <p class="main_section_txt" >We offer a variety of technological solutions and services in the following fields</p>
+            </div>
+          
           <div class="services">
             <div class="services_box" v-for="item in bullets"><span></span>{{ item }}</div>
           </div>
-          <Mbutton txt="contact us for more details" link="/contact"/>
+          <Mbutton class="Mbutton_main" txt="contact us for more details" link="/contact"/>
+        </div>
         </div>
       </section>
 
@@ -112,13 +122,12 @@
 <style>
   
   .main_section{
-    min-height:90vh;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: center; */
-    padding-top:50px;
-    padding-bottom:50px;
+    height:90vh;
+    /* display:flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* padding-top:50px; */
+    /* padding-bottom:50px; */
     color: lightgrey;
     
     background-color: #2d2626;
@@ -129,17 +138,19 @@
     background-color: #4a3e3e
   }
   .services{
-    width:100%;
-    margin-top:50px;
-    margin-bottom:30px;
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 4;
+    /* width:100%; */
+    /* margin-top:50px; */
+    /* margin-bottom:30px; */
     display:flex;
     flex-wrap:wrap;
     gap:4%;
   }
   .services_box{
     width:22%;
-    height:80px;
-    margin-bottom:20px;
+    height:48%;
+    /* margin-bottom:20px; */
     padding:20px;
     font-size:14px;
     line-height:20px;
@@ -151,6 +162,7 @@
     align-items:center;
     justify-content:center;
     /* background:violet; */
+    background-color: #2d2626;
     border:1px solid rgba(211, 211, 211,0.5);
     border-radius:10px;
     position:relative;
@@ -171,10 +183,20 @@
   .systems{
     width:100%;
   }
+  .main_section_txt_box{
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    align-self: end;
+
+  }
+  .Mbutton_main{
+    grid-column: 3 / span 2;
+    grid-row: 6 / span 1;
+  }
   .main_section_headline{
     font-size:24px;
     font-weight: 600;
-    color:violet;
+    color:#F9DB00;
     margin-bottom:10px;
   }
   .main_section_txt{
@@ -184,6 +206,6 @@
     /* letter-spacing:1px; */
   }
  
- 
+  
 </style>
   

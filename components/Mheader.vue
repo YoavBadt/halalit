@@ -1,13 +1,25 @@
 <template >
-    <div class="main_hero">
+    <div class="main_hero techno">
         <div class="wrapper ">
-            <div class="main_hero_box">
-               
-                <div>
-                    <h2 class="main_hero_headline"><span>We're Studio Halalit,</span> we are an <br/>Engineering & Industrial design hub.<br/>We like to build things.</h2>
+            <div class="section_grid">
+                <div class="main_hero_img_box">
+                  <img class="main_hero_img" src="/public/img/main/tryke_yellow.jpeg"/>
                 </div>
-                <div>
-                    <h3 class="main_hero_h2">From single Proof Of Concept, to Small scale manufacturing to fully industrial products. We specialize in robust and rapid prototyping, with local small scale manufacturing capabilities and experience in escorting fully industrial product manufacturing.</h3>
+                <div class="main_hero_txt_box">
+                    <h2 class="main_hero_headline">
+                      
+                        <span class="main_span_1">We're Studio Halalit, </span><span class="main_span_2">we are an <br/></span> 
+                      
+                        <span class="main_span_2">Engineering & Industrial design hub.<br/></span>
+
+                        <span class="main_span_2">We like to build things.</span>
+
+                    </h2>
+                
+                    <h3 class="main_hero_subheadline">
+                      From single Proof Of Concept, to Small scale manufacturing to fully industrial products. We specialize in robust and rapid prototyping, with local small scale manufacturing capabilities and experience in escorting fully industrial product manufacturing.<br/>
+                      <!-- <span>Let's work together.</span> -->
+                    </h3>
                 </div>
                 
             </div>
@@ -24,44 +36,99 @@ export default {
     width:100%;
     height:90vh;
     color: lightgrey;
-    background-color: #2d2626;
+    background-color: rgb(45, 38, 38);
+    /* background-image: url('/public/img/main/tryke_yellow.jpeg'); */
+    /* background-blend-mode: multiply; */
     border-bottom:1px solid rgba(211, 211, 211,0.1);
 }
-
+  /* main hero box has been replaced with section grid */
   .main_hero_box{
-    width:70%;
+    /* width:70%; */
+    /* margin: 0 auto; */
     height:100%;
-    margin: 0 auto;
-    display:flex;
+    padding-top:40px;
+    padding-bottom:40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 40px;
+    /* display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
      
   }
   .main_hero_box div{
-    height:33.33%;
+    /* height:33.33%; */
     /* border: 1px solid red; */
   }
+  .main_hero_img_box{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 3;
+    overflow:hidden;
+    border-radius:10px;
+    /* height:50%; */
+    /* background-image: url('/public/img/main/tryke_yellow.jpeg'); */
+    -webkit-box-shadow: 3px 4px 15px -7px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 4px 15px -7px rgba(0,0,0,1);
+    box-shadow: -0px 10px 25px 0px rgba(0,0,0,0.5);
+  }
+  .main_hero_img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 30% 50%;
+    /* filter: saturate(0); */
+    /* mix-blend-mode: exclusion; */
+  }
+  .main_hero_txt_box{
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 2;
+  }
   .main_hero_headline{
-    
-    font-size:52px;
-    line-height:1.2;
-    font-weight: 200;
-    text-align:center;
-    margin:0 auto;
+    font-size:50px;
+    line-height:60px;
+    margin-top:-12px;
+    text-align:left;
+    /* margin:0 auto; */
   }
-  .main_hero_headline span{
+  .main_span_1{
     font-weight: 600;
-    color:violet;
+    /* background: #F9DB00; */
+      /* color: #62a9fb; */
+    color:#F9DB00;
+    /* color:white; */
   }
-  .main_hero_h2{
-    
-    margin:0 auto;
-    font-size : 24px;
-    line-height: 32px;
+  .main_span_2{
     font-weight: 300;
-    text-align: justify;
-    text-align-last: center;
+    /* background:grey; */
+    /* line-height: 64px; */
+  }
+  .main_hero_subheadline{
+  
+    /* color:#F9DB00; */
+    /* border:1px solid #F9DB00; */
+    /* background: lightgray; */
+    /* color:black; */
+    /* padding:20px; */
+    /* text-transform: uppercase; */
+    /* display:none; */
+    /* border-radius: 10px;; */
+    /* width:75%; */
+    margin-top:50px;
+    font-size : 24px;
+    line-height: 40px;
+    font-weight: 200;
+    color:white;
+    /* text-align: left; */
+    /* text-align-last: center; */
     
+  }
+  .techno{
+    background-image: url('/img/main/techno_4.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 10vh;
   }    
 </style>

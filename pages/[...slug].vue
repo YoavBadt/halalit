@@ -1,15 +1,17 @@
 <template>
     <div class="wrapper">
         <ContentDoc v-slot="{ doc }">
-        <div class="cover_img_box">
-            <img class="cover_img" :src="doc.cover">
-        </div>
+            <div class="cover_img_box">
+                <img class="cover_img" :src="doc.cover">
+            </div>
+            <main class="section_grid">
             <article>
-            <div class="project_tagline"><RouterLink to="/projects" ><span >↩ Back to Projects</span></RouterLink> / {{ doc.name }}</div>
-            <h2 class="project_headline">{{ doc.name }}</h2>
-            <h3 class="project_subheadline">{{ doc.description }}</h3>
-            <ContentRendererMarkdown :value="doc" />
-        </article>
+                <div class="project_tagline"><RouterLink to="/projects" ><span >↩ Back to Projects</span></RouterLink> / {{ doc.name }}</div>
+                <h2 class="project_headline">{{ doc.name }}</h2>
+                <h3 class="project_subheadline">{{ doc.description }}</h3>
+                <ContentRendererMarkdown :value="doc" />
+            </article>
+            </main>
         </ContentDoc>
     </div>
 </template>
@@ -21,21 +23,31 @@ export default {
 <style >
     .cover_img_box{
     width:100%;
-    height:50vh;
-    border:1px solid rgba(0,0,0,0.1);
-    border-radius:3px;
-    overflow:hidden;
-    margin-bottom: 40px;
+    height:80vh;
+    padding-top:40px;
+    padding-bottom: 40px;
+    /* border:1px solid rgba(0,0,0,0.1); */
+    /* border-radius:3px; */
+    /* overflow:hidden; */
+
 }
 .cover_img{
     width:100%;
-    min-height:100%;
+    height:100%;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 50% 100%;
 }
 article{
-    width:50%;
-    margin: 0 auto;
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 6;
+    margin-top:-40px;
+    /* margin-top:-200px;
+    margin-left:-40px;
+    margin-right:-40px;
+    padding:40px;
+    background-color: #ece8e8;
+    border-radius:10px; */
+   
 }
 .project_tagline{
     margin-bottom:20px;
@@ -61,5 +73,8 @@ article p{
     /* font-size:16px;
     line-height: 32px; */
     margin-bottom:32px;
+}
+article img{
+    width:100%;
 }
 </style>

@@ -28,6 +28,16 @@ main{
   min-height:90vh;
   padding-bottom:10vh;
 }
+
+.section_grid{
+  height:100%;
+  padding-top:40px;
+  padding-bottom:40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 40px;
+}
 h1,h2,h3,h4,h5,h6{
   /* color:rgba(10,10,10,1); */
 }

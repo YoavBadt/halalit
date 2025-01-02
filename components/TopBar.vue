@@ -104,12 +104,16 @@ nav {
 
 }
 .a_active{
-  color:violet
+  /* color:violet */
+  /* color:#F9DB00; */
+  color:orange;
 }
 nav a.router-link-exact-active {
   /* color: var(--color-text); */
   /* color:hsla(160, 100%, 37%, 1) */
-  color:violet
+  /* color:violet */
+  color:#F9DB00;
+  color:orange;
 }
 
 nav a.router-link-exact-active:hover {
