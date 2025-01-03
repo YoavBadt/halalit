@@ -5,4 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/fonts', '@nuxt/content'],
   ssr: false,
   css : ['~/assets/base.css','~/assets/main.css'],
+  app : {
+    pageTransition: false,
+  }
 })

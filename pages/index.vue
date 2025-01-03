@@ -35,11 +35,18 @@
       <section class="main_section" >
 
         <div class="wrapper">
-          <h4 class="main_section_headline">Tools, Systems & Capabilities</h4>
-          <p class="main_section_txt" >We work with...</p>
-          <div class="systems">
-            <div class="systems_box" v-for="item in systems">{{ item.name }}</div>
-          </div>
+
+          <div class="section_grid">
+            <div class="main_section_txt_box">
+              <h4 class="main_section_headline">Tools, Systems & Capabilities</h4>
+              <p class="main_section_txt" >We work with...</p>
+            </div>
+            <div class="systems">
+              <div class="systems_box" v-for="item in systems">{{ item.name }}</div>
+            </div>
+          </div>  
+
+
         </div>
 
       </section>

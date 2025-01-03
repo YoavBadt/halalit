@@ -3,7 +3,7 @@
         <div class="wrapper ">
             <div class="section_grid">
                 <div class="main_hero_img_box">
-                  <img class="main_hero_img" src="/public/img/main/tryke_yellow.jpeg"/>
+                  <img class="main_hero_img" src="/public/img/main/tryke_yellow.jpeg" />
                 </div>
                 <div class="main_hero_txt_box">
                     <h2 class="main_hero_headline">
@@ -125,10 +125,11 @@ export default {
     
   }
   .techno{
-    background-image: url('/img/main/techno_4.jpeg');
+    background-image: url('/img/main/techno_1_b.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-y: 10vh;
+    background-blend-mode: multiply;
   }    
 </style>
