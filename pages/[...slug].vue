@@ -54,20 +54,20 @@ article{
 }
 .project_tagline span{
     font-weight: 600;
-    color: violet;
+    color: orange;
 }
 .project_headline{
-        font-size: 24px;
+        font-size: 32px;
         line-height:50px;
         font-weight: 500;
         text-transform: uppercase;
     }
 .project_subheadline{
-    font-size:20px;
-    line-height: 32px;
+    font-size:24px;
+    line-height: 36px;
     font-weight: 300;
     margin-bottom:20px;
-    margin-top:20px;
+    /* margin-top:20px; */
 }
 article p{
     /* font-size:16px;

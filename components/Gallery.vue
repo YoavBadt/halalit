@@ -42,7 +42,7 @@ const query: QueryBuilderParams = { path: '/projects', limit: 3 }
     .project_gallery_box{
         grid-row: 1 / span 1;
         display:grid;
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: 1fr 200px;
 
         gap:10px;
         /* width:33.33%; */
@@ -56,16 +56,13 @@ const query: QueryBuilderParams = { path: '/projects', limit: 3 }
         border-radius:5px;
     }
     .project_gallery_txt_box{
-        /* border:1px solid red; */
         grid-row: 2 / span 1;
-        /* align-self: end; */
     }
     .project_gallery_txt_box p{
         color: lightgrey;
         font-size:14px;
         line-height:25px;
         text-transform: capitalize;
-        /* border:1px solid red; */
     }
     .project_gallery_img{
         width:100%;
@@ -76,8 +73,6 @@ const query: QueryBuilderParams = { path: '/projects', limit: 3 }
     }
     .project_gallery_headline{
         color:white;
-        /* margin-bottom:10px; */
-        /* border-bottom:2px solid #F9DB00; */
         display: inline-block;
         text-transform:uppercase;
         font-size:16px;

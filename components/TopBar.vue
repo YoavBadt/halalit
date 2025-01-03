@@ -6,8 +6,8 @@
         <div class="hamburger">
             <!-- <div class="ham_icon">X</div> -->
             <nav >
-              <RouterLink to="/">Main</RouterLink>
-              <RouterLink to="/projects" :class="{ a_active : isActive, nav_a_main: isMain}">Projects</RouterLink>
+              <RouterLink to="/"         :class="{nav_a_main_active: isMain}">Main</RouterLink>
+              <RouterLink to="/projects" :class="{a_project : isProject, nav_a_main: isMain}">Projects</RouterLink>
               <RouterLink to="/about"    :class="{nav_a_main: isMain}" >About</RouterLink>
               <RouterLink to="/contact"  :class="{nav_a_main: isMain}" >Contact</RouterLink>
             </nav>
@@ -26,19 +26,20 @@
 <script>
 import { RouterLink } from 'vue-router'
 export default {
+  
     data(){
         return{
             title : '', 
-            isActive : false,
+            isProject : false,
             isMain : true   
         }
     },
     methods:{
       determine(path){
         if(path.split('/')[1] === 'projects'){
-        this.isActive = true
+        this.isProject = true
       }else{
-        this.isActive = false
+        this.isProject = false
       }
       if(path === '/'){
         this.isMain = true
@@ -101,19 +102,12 @@ export default {
   color:lightgrey;
 }
 nav {
+}
 
-}
-.a_active{
-  /* color:violet */
-  /* color:#F9DB00; */
-  color:orange;
-}
+
 nav a.router-link-exact-active {
-  /* color: var(--color-text); */
-  /* color:hsla(160, 100%, 37%, 1) */
-  /* color:violet */
-  color:#F9DB00;
-  color:orange;
+  font-weight: 700;
+  margin-right:9px;
 }
 
 nav a.router-link-exact-active:hover {
@@ -121,10 +115,13 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  padding-right:10px;
+  margin-right:10px;
 }
 .nav_a_main{
   color:lightgrey;
+}
+.nav_a_main_active{
+  color:#F9DB00;
 }
 
 

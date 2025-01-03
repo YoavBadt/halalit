@@ -1,9 +1,8 @@
 <template >
     
-       <TopBar/>
+       <TopBar />
        
         <slot/>
-        
 
        <Footer />
     

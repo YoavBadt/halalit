@@ -11,7 +11,8 @@ body{
   line-height:24px;
   color:#464646;
   
-  background-color: #ece8e8;
+  /* background-color: #ece8e8; */
+  background-color: rgb(225, 221, 221);
   font-family: "Inter",sans-serif;
   font-weight: 700;
   font-style: normal;
