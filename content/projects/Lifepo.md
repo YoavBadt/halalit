@@ -1,5 +1,5 @@
 ---
-name: nullConnected LiFePO, Battery System for Logistics
+name: Connected LiFePO
 description: A modular, high-efficiency LiFePO₄ battery system designed to
   support logistics and material handling applications, ensuring reliable and
   long-lasting power for critical operations.
