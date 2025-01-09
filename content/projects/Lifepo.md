@@ -1,0 +1,28 @@
+---
+name: nullConnected LiFePO, Battery System for Logistics
+description: A modular, high-efficiency LiFePO₄ battery system designed to
+  support logistics and material handling applications, ensuring reliable and
+  long-lasting power for critical operations.
+cover: /img/projects/lifepo/lifepo1.png
+---
+
+Clients: Shufersal Ltd.
+
+#### **Design process:**
+
+Shufersal Ltd., a leading logistics and retail company, approached us with a request to develop a custom modular battery system to enhance energy safety, reliability and usability in their logistics operations.
+
+The system needed to be compact, durable, and high-performance, capable of handling demanding operational conditions while ensuring long cycle life and minimal maintenance.
+
+Our design approach focused on developing a scalable and integrated solution using LiFePO₄ battery technology, known for its safety, longevity, and stability. The battery modules were designed with:
+
+- Battery safety real-time remote monitoring
+- Battery fleet management via Smart monitoring and control, including real-time state-of-health (SOH) tracking, charging analytics, and a dashboard interface for operational insights.
+- Robust mechanical design, ensuring resilience in warehouse and transport environments.
+- Multiple output configurations, supporting 12V–19V DC outputs, enabling seamless integration with various equipment.
+
+Through extensive prototyping and iterative development, we engineered a system that is lightweight yet durable, easy to deploy, and capable of handling thousands of charge cycles while maintaining high efficiency.
+
+#### Outcome:
+
+The system is currently being implemented in Shufersal's logistics network, enhancing their operational efficiency and reducing downtime. We continue to provide technical support and optimization as the system is scaled up across their operations.
