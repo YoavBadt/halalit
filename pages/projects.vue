@@ -49,6 +49,7 @@ export default {
         /* padding:10px; */
         /* background-color: #ebebeb; */
         /* background-color: #f6f5f5; */
+        
         border:1px solid rgba(0,0,0,0.1);
         border-radius:5px;
         overflow:hidden;
