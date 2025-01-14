@@ -41,22 +41,23 @@ const query: QueryBuilderParams = { path: '/projects', limit: 3 }
     }
     .project_gallery_box{
         grid-row: 1 / span 1;
-        display:grid;
+        /* display:grid;
         grid-template-rows: 1fr 200px;
 
-        gap:10px;
+        gap:10px; */
         /* width:33.33%; */
         
     }
     
     .project_gallery_img_box{
-        grid-row: 1 / span 1;
+        height:400px;
+        margin-bottom:20px;
         overflow:hidden;
         border:1px solid rgba(255,255,255,0.2);
         border-radius:5px;
     }
     .project_gallery_txt_box{
-        grid-row: 2 / span 1;
+        
     }
     .project_gallery_txt_box p{
         color: lightgrey;

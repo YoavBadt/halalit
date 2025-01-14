@@ -124,7 +124,10 @@ nav a {
   color:#F9DB00;
 }
 
-
+.a_project{
+  font-weight: 700;
+  margin-right:9px;
+}
 
 @media (min-width: 1024px) {
   /* header {

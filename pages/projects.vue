@@ -49,7 +49,7 @@ export default {
         /* padding:10px; */
         /* background-color: #ebebeb; */
         /* background-color: #f6f5f5; */
-        
+        background-color: #ece8e8;
         border:1px solid rgba(0,0,0,0.1);
         border-radius:5px;
         overflow:hidden;
@@ -64,7 +64,7 @@ export default {
     .projects_img_box{
         width:100%;
         height:250px;
-        padding:10px;
+        /* padding:10px; */
         border-bottom:1px solid lightgrey;
         /* border-radius:3px; */
         overflow:hidden;

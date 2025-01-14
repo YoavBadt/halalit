@@ -20,45 +20,38 @@
         <div class="wrapper">
           <div class="section_grid">
             <div class="main_section_txt_box">
-              <h4 class="main_section_headline">Technological Services</h4>
+              <h4 class="main_section_headline">Our Work Process</h4>
               <p class="main_section_txt" >We offer a variety of technological solutions and services in the following fields</p>
             </div>
-          
-          <div class="services">
+          <!-- <Table /> -->
+          <Diagram />
+
+          <!-- <div class="services">
             <div class="services_box" v-for="item in bullets"><span></span>{{ item }}</div>
+          </div> -->
+
+          <!-- <Mbutton class="Mbutton_main" txt="contact us for more details" link="/contact"/> -->
+
           </div>
-          <Mbutton class="Mbutton_main" txt="contact us for more details" link="/contact"/>
-        </div>
         </div>
       </section>
 
       <section class="main_section" >
 
         <div class="wrapper">
-
           <div class="section_grid">
             <div class="main_section_txt_box">
-              <h4 class="main_section_headline">Tools, Systems & Capabilities</h4>
+              <h4 class="main_section_headline">Our Clients</h4>
               <p class="main_section_txt" >We work with...</p>
             </div>
+
             <div class="systems">
-              <div class="systems_box" v-for="item in systems">{{ item.name }}</div>
-            </div>
-          </div>  
-
-
-        </div>
-
-      </section>
-
-      <section class="main_section" >
-
-        <div class="wrapper">
-          <h4 class="main_section_headline">Our Clients</h4>
-          <p class="main_section_txt" >We work with...</p>
-          <div class="systems">
             <div class="systems_box" v-for="item in clients">{{ item.name }}</div>
+          </div> 
+
+
           </div>
+          
         </div>
 
       </section>
@@ -70,6 +63,8 @@
   import Mheader from './components/Mheader.vue'
   import Gallery from './components/Gallery.vue'
   import Mbutton from './components/Mbutton.vue'
+  import Table from './components/Table.vue'
+  import Diagram from './components/Diagram.vue'
   export default {
       data(){
           return{
