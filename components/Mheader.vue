@@ -8,9 +8,9 @@
                 <div class="main_hero_txt_box">
                     <h2 class="main_hero_headline">
                       
-                        <span class="main_span_1">We're Studio Halalit, </span><span class="main_span_2">we are an <br/></span> 
+                        <span class="main_span_1">We're Studio Halalit, </span><br/><span class="main_span_2">we are an </span> 
                       
-                        <span class="main_span_2">Engineering & Industrial design hub.<br/></span>
+                        <span class="main_span_2">Engineering & Industrial design hub. </span>
 
                         <span class="main_span_2">We like to build things.</span>
 

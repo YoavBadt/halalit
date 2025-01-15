@@ -21,7 +21,7 @@
           <div class="section_grid">
             <div class="main_section_txt_box">
               <h4 class="main_section_headline">Our Work Process</h4>
-              <p class="main_section_txt" >We offer a variety of technological solutions and services in the following fields</p>
+              <!-- <p class="main_section_txt" >We offer a variety of technological solutions and services in the following fields</p> -->
             </div>
           <Diagram />
           </div>
@@ -29,28 +29,40 @@
       </section>
 
       <section class="main_section" >
-
         <div class="wrapper">
           <div class="section_grid">
-
             <div class="main_section_txt_box">
-              <h4 class="main_section_headline">Services</h4>
-              <p class="main_section_txt" > We provide Multi-disciplinary R&D services:</p>
+              <h4 class="main_section_headline">We provide Multi-disciplinary R&D services:</h4>
+              <p class="main_section_txt" >
+                <span v-for="service in services">{{ service }}</span>
+              </p>
             </div>
-
-          <Services />    
-          <!-- <div class="systems">
-            <div class="systems_box" v-for="item in clients">{{ item.name }}</div>
-          </div>  -->
-
-
+            <Services />    
           </div>
-          
         </div>
-
       </section>
 
-    
+      <section class="main_section" >
+        <div class="wrapper">
+          <div class="section_grid">
+            <div class="main_section_txt_box">
+              <h4 class="main_section_headline">Our Clients </h4>
+              <p class="main_section_txt" >
+                
+              </p>
+            </div>
+
+            <div class="clients">
+              <div v-for="client in clients" class="client_box">
+                <div class="client_img_box" :style="{backgroundImage : `url('/img/clients/${client.img}.png')`}">
+                </div>
+                <div>{{ client.name }}</div>
+              </div>
+            </div>    
+
+          </div>
+        </div>
+      </section>
   </template>
   
 <script >
@@ -62,53 +74,18 @@
   export default {
       data(){
           return{
-              bullets : ['Product Design','Product Management','3D Modeling','Custom Mechanisms','Packaging','Thermal Management','Electrical, Energy & Battery Design','Physical Interfaces UX/UI'],
               clients : [
-                {name:'enercon',img : ''}
+                {name : 'Enercon',img : 'enercon'},
+                {name : 'General Motors',img : 'general'},
+                {name : 'Israel Aerospace Industries', img : 'israel'},
+                {name : 'Meteo Logic', img : 'meteo'},
+                {name : 'Shufersal Online', img : 'shufersal'},
+                {name : 'Strauss Stragety', img : 'strauss'},
+                {name : 'Tigi Solar', img : 'tigi'},
+                
               ],
-              systems : [
-                {
-                  name : 'Control systems'
-                },
-                {
-                  name : 'Robotics and actuated devices'
-                },
-                {
-                  name : 'Solar, batteries & off grid systems'
-                },
-                {
-                  name : 'Defence'
-                },
-                {
-                  name: ' 3d scanning & printing'
-                },
-                {
-                  name : 'Laser cutting & CNC'
-                },
-                {
-                  name : 'Micro processors, IOT and software development'
-                },
-                {
-                  name : 'Welding & Plasma cutting'
-                }
-              ],
-              clients : [
-                {
-                  name : 'Iai'
-                },
-                {
-                  name : 'Shufersal'
-                },
-                {
-                  name : 'enercon'
-                },
-                {
-                  name : 'tigi'
-                },
-                {
-                  name : 'straus'
-                }
-              ]    
+              services : ['3D Modeling','Energy Storage & Power Circuits','Iot & Electronics','Fabrication & manufacturing'],
+                  
           }
       }
   }
@@ -138,17 +115,52 @@
   }
   .main_section_headline{
     font-size:24px;
+    line-height:30px;
     font-weight: 600;
     color:#F9DB00;
     margin-bottom:10px;
   }
   .main_section_txt{
     font-size:20px;
-    line-height:32px;
+    line-height:30px;
     font-weight: 400;
     /* letter-spacing:1px; */
   }
- 
-  
+  .main_section_txt span{
+    display:inline-block;
+    margin-right:10px;
+    padding: 0 20px;
+    background: lightgrey;
+    color: #2d2626;
+    border-radius:2px;
+    font-size:14px;
+    line-height:30px;
+    font-weight: 700;
+  }
+  .clients{
+    grid-column: 1 / span all;
+    grid-row: 2 / span all;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:40px;
+  }
+  .client_box{
+    text-align:center;
+
+  }
+  .client_img_box{
+    width:100%;
+    height:100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% ;
+    border-radius:5px;
+    
+  }
+  .client_img{
+    
+  }
 </style>
   
