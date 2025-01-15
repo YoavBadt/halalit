@@ -88,7 +88,7 @@ export default {
     }
     .myArticle ul{
         /* list-style-type: none; */
-        width:75%;
+        /* width:75%; */
         margin: 0 auto 32px auto;
         padding:0px;
     }
@@ -99,7 +99,7 @@ export default {
         font-size:18px;
         line-height: 32px;
         font-weight: 500;
-        padding:32px 64px 32px 64px ;
+        padding:32px 32px 32px 64px ;
         margin-bottom:2px;
         /* border-bottom: 1px solid #e1dddd; */
     }

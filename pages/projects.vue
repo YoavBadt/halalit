@@ -103,9 +103,14 @@ export default {
         font-size:14px;
         line-height:20px;
         height:40px;
-        overflow:hidden;
+        overflow: hidden;
         text-overflow: ellipsis;
-        
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .projects_description::after{
+        /* content:'...' */
     }
     .projects_button{
         width:100%;

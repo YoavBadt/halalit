@@ -63,8 +63,15 @@ const query: QueryBuilderParams = { path: '/projects', limit: 3 }
         color: lightgrey;
         font-size:14px;
         line-height:25px;
+        height:50px;
         text-transform: capitalize;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
+    
     .project_gallery_img{
         width:100%;
         height:100%;

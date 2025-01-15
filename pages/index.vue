@@ -23,15 +23,7 @@
               <h4 class="main_section_headline">Our Work Process</h4>
               <p class="main_section_txt" >We offer a variety of technological solutions and services in the following fields</p>
             </div>
-          <!-- <Table /> -->
           <Diagram />
-
-          <!-- <div class="services">
-            <div class="services_box" v-for="item in bullets"><span></span>{{ item }}</div>
-          </div> -->
-
-          <!-- <Mbutton class="Mbutton_main" txt="contact us for more details" link="/contact"/> -->
-
           </div>
         </div>
       </section>
@@ -40,14 +32,16 @@
 
         <div class="wrapper">
           <div class="section_grid">
+
             <div class="main_section_txt_box">
-              <h4 class="main_section_headline">Our Clients</h4>
-              <p class="main_section_txt" >We work with...</p>
+              <h4 class="main_section_headline">Services</h4>
+              <p class="main_section_txt" > We provide Multi-disciplinary R&D services:</p>
             </div>
 
-            <div class="systems">
+          <Services />    
+          <!-- <div class="systems">
             <div class="systems_box" v-for="item in clients">{{ item.name }}</div>
-          </div> 
+          </div>  -->
 
 
           </div>
@@ -63,7 +57,7 @@
   import Mheader from './components/Mheader.vue'
   import Gallery from './components/Gallery.vue'
   import Mbutton from './components/Mbutton.vue'
-  import Table from './components/Table.vue'
+  import Services from './components/Services.vue'
   import Diagram from './components/Diagram.vue'
   export default {
       data(){
@@ -125,66 +119,13 @@
   
   .main_section{
     height:90vh;
-    /* display:flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* padding-top:50px; */
-    /* padding-bottom:50px; */
     color: lightgrey;
-    
     background-color: #2d2626;
-    /* border-bottom:1px solid rgba(211, 211, 211,0.1); */
-    /* outline:1px solid rgba(0,0,0,0.1); */
   }
   .main_section:nth-child(odd){
     background-color: #4a3e3e
   }
-  .services{
-    grid-column: 1 / span 6;
-    grid-row: 2 / span 4;
-    /* width:100%; */
-    /* margin-top:50px; */
-    /* margin-bottom:30px; */
-    display:flex;
-    flex-wrap:wrap;
-    gap:4%;
-  }
-  .services_box{
-    width:22%;
-    height:48%;
-    /* margin-bottom:20px; */
-    padding:20px;
-    font-size:14px;
-    line-height:20px;
-    text-align:center;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    /* background:violet; */
-    background-color: #2d2626;
-    border:1px solid rgba(211, 211, 211,0.5);
-    border-radius:10px;
-    position:relative;
-  }
-  .services_box span{
-    position:absolute;
-    left:-5px;
-    top:-5px;
-    display: inline-block;
-    margin-right:10px;
-    margin-bottom:2px;
-    height:10px;
-    width:10px;
-    border-radius:50%;
-    border:1px solid lightgrey;
-    background-color: #2d2626;
-  }
-  .systems{
-    width:100%;
-  }
+
   .main_section_txt_box{
     grid-column: 1 / span 6;
     grid-row: 1 / span 1;

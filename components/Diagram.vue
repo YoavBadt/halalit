@@ -4,8 +4,6 @@
         gridTemplateRows: `repeat(${row},1fr)`,
         gap : gap + 'px'
         }"
-        
-        
         >
         <!-- <div 
         v-for="cell in col*row" 
@@ -59,18 +57,11 @@
             }"
         >
 
-            <div class="d_head" >
-                
-                    {{name}} 
-                   
-            </div>
+            <div class="d_head" >{{name}} </div>
 
             <div v-for="(str, i) in field" class="d_cat" :style="{ zIndex:'2',gridColumn : ` ${i*11+2} /span 9` }">
                 <span>{{ str }}</span>
-                <!-- <div class="d_cat_box">
-                </div> -->
             </div>
-        
         
             <div class="d_con" :style="{gridColumn : '11 / span 2',}"><span></span></div>
             <div class="d_con" :style="{gridColumn : '22 / span 2',}"><span></span></div>
@@ -91,12 +82,11 @@
 export default {
     data(){
         return {
-            color1 : '#F9DB00',
             col : 22,
             row : 17,
             gap : 0,
             fields : {
-                design : [ 'Physical modeling and interface design','Electronics and powerdesign','Embedded and cloud Software design','System design'],
+                design : [ 'Physical modeling and interface design','Electronics and power design','Embedded and cloud Software design','System design'],
                 prototyping : [' 3D printing, laser cutting, CNC','Power circuits and Battery assembly','Micro controllers software development','Proof Of Concept until Final Prototype'],
                 fabrication : ['Advanced tooling & machining','Energy system building','PCB and dedicated electronics fabrication','Small batches to fully commercial products']
             },
@@ -157,7 +147,7 @@ export default {
         top:-20px;
         left:calc(0% - 1px);
         height:20px;
-        width:9%;
+        /* width:9%; */
         /* grid-column : 1 / span 10; */
         /* grid-row : 1 / span 1; */
     }
