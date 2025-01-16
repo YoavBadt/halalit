@@ -56,7 +56,7 @@
               <div v-for="client in clients" class="client_box">
                 <div class="client_img_box" :style="{backgroundImage : `url('/img/clients/${client.img}.png')`}">
                 </div>
-                <div>{{ client.name }}</div>
+                <!-- <div>{{ client.name }}</div> -->
               </div>
             </div>    
 
