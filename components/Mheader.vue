@@ -83,46 +83,34 @@ export default {
   }
   .main_hero_txt_box{
     grid-column: 3 / span 4;
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 3;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background:red; */
   }
   .main_hero_headline{
     font-size:50px;
+    /* font-size: 2.6cqw; */
     line-height:60px;
     margin-top:-12px;
     text-align:left;
     /* margin:0 auto; */
   }
+  
   .main_span_1{
     font-weight: 600;
-    /* background: #F9DB00; */
-      /* color: #62a9fb; */
     color:#F9DB00;
-    /* color:white; */
   }
   .main_span_2{
     font-weight: 300;
-    /* background:grey; */
-    /* line-height: 64px; */
   }
   .main_hero_subheadline{
-  
-    /* color:#F9DB00; */
-    /* border:1px solid #F9DB00; */
-    /* background: lightgray; */
-    /* color:black; */
-    /* padding:20px; */
-    /* text-transform: uppercase; */
-    /* display:none; */
-    /* border-radius: 10px;; */
-    /* width:75%; */
-    margin-top:50px;
     font-size : 24px;
     line-height: 40px;
     font-weight: 200;
+    text-align: justify;
     color:white;
-    /* text-align: left; */
-    /* text-align-last: center; */
-    
   }
   .techno{
     background-image: url('/img/main/techno_1_b.jpg');
@@ -131,5 +119,14 @@ export default {
     background-attachment: fixed;
     background-position-y: 10vh;
     background-blend-mode: multiply;
-  }    
+  }  
+  @media (max-width: 1490px) {
+    .main_hero_headline{
+      font-size:45px;
+    }
+    .main_hero_subheadline{
+      font-size:22px;
+      line-height: 36px;
+    }
+  }  
 </style>
