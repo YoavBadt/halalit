@@ -7,5 +7,8 @@ export default defineNuxtConfig({
   css : ['~/assets/base.css','~/assets/main.css'],
   app : {
     pageTransition: false,
+  },
+  devServer: {
+    port: 3000,      // Change the port to 3001
   }
 })
