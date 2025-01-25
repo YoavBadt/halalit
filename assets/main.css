@@ -1,5 +1,8 @@
 @import './base.css';
-
+:root{
+  --main-txt: #464646;
+  --main-yellow: #F9DB00;
+}
 #app {
   width:100vw;
   /* padding: 2rem; */
@@ -18,27 +21,66 @@ body{
   font-style: normal;
 }
 
+.main_section{
+  color: lightgrey;
+  background-color: #2d2626;
+
+  @media (min-width:600px){
+    height:90vh;
+  }
+  @media (max-width: 600px) {
+    /* min-height: 100vh; */
+    padding:40px 10px;
+  }
+}
+
 .wrapper{
   max-width: 1280px;
   flex:1;
   height:100%;
   margin: 0 auto;
+  
+  @media (min-width: 1024px) {
+    padding:0 20px;
+  }
+
+  @media (max-width: 600px) and {
+    padding:0
+  }
+
 }
 
-main{
-  min-height:90vh;
-  padding-bottom:10vh;
-}
+
 
 .section_grid{
   height:100%;
-  padding-top:40px;
-  padding-bottom:40px;
+  padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 40px;
+
+  @media (max-width: 600px) {
+    display: initial;
+    /* grid-template-columns: 10px 1fr 10px; */
+    /* grid-template-rows: 10px 1fr 1fr 1fr 1fr 1fr 1fr 10px; */
+    /* column-gap: 0; */
+    /* row-gap: 0px; */
+  }
 }
+
+/* main_section / wrapper / section_grid */
+
+@media (max-width: 600px) {
+  
+  
+  
+}
+
+
+
+
 h1,h2,h3,h4,h5,h6{
   /* color:rgba(10,10,10,1); */
 }
@@ -64,18 +106,9 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    /* display: flex;
-    place-items: center; */
-  }
+main{
+  /* i think this is unused */
+  min-height:90vh;
+  padding-bottom:10vh;
 
-  #app {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem; */
-  }
-  .wrapper{
-    padding:0 20px;
-  }
 }

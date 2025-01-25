@@ -5,8 +5,8 @@
                 
                     <RouterLink :to="project._path" class="project_gallery_box" >
                             <!-- <div class="project_gallery_box"> -->
-
-                                <div class="project_gallery_img_box">
+                              
+                                <div class="project_gallery_img_box" >
                                     <img class="project_gallery_img"  :src="project.cover" alt="no image">
                                 </div>
                                 <div class="project_gallery_txt_box">
@@ -24,13 +24,20 @@
     </div>
 </template>
 <script setup lang="ts">
+import { ref } from 'vue'
+const count = ref(0)
+let mobile = window.innerWidth <= 600 ? true : false
+let limit = window.innerWidth <= 600 ? 1 : 3
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 const query: QueryBuilderParams = { path: '/projects', limit: 3 }
+
+
+
+
 </script>
 <style >
     .project_gallery{
-        grid-column: 1 / span 6;
-        grid-row: 2 / span 4;
+        
         /* border:1px solid red; */
         display:grid;
         grid-auto-flow: column;
@@ -86,5 +93,31 @@ const query: QueryBuilderParams = { path: '/projects', limit: 3 }
         font-size:16px;
         line-height:30px;
         font-weight :700;
+    }
+    @media (max-width: 600px) {
+        .project_gallery{
+            display:initial;
+        }
+        .project_gallery_box{
+            grid-row:none;
+            display:inline-block;
+            border-bottom:1px solid rgba(255,255,255,0.1);
+            margin-bottom:40px;
+            /* background:red; */
+        }
+        
+        .project_gallery_img_box{
+            height:200px;
+        }
+        .project_gallery_txt_box{
+            margin-bottom:20px;
+        }
+        .project_gallery_txt_box p{
+            font-size:18px;
+            font-weight: 300;
+        }
+        
+        .project_gallery_headline{
+        }
     }
 </style>

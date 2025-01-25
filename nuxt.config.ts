@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     pageTransition: false,
   },
   devServer: {
-    port: 3001,      // Change the port to 3001
+    port: 3001, 
+    host: '0.0.0.0'     // Change the port to 3001
   }
 })

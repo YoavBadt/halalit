@@ -90,4 +90,7 @@ export default {
         text-align:center;
         /* grid-column: 1 / span 2 ; */
 }
+@media (max-width:600px){
+    
+}
 </style>

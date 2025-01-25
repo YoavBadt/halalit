@@ -84,7 +84,7 @@ export default {
         return {
             col : 22,
             row : 17,
-            gap : 0,
+            gap :  0,
             fields : {
                 design : [ 'Physical modeling and interface design','Electronics and power design','Embedded and cloud Software design','System design'],
                 prototyping : [' 3D printing, laser cutting, CNC','Power circuits and Battery assembly','Micro controllers software development','Proof Of Concept until Final Prototype'],
@@ -289,5 +289,19 @@ export default {
         height:100%;
         display:block;
         border-right:1px solid #F9DB00;
+    }
+    @media (max-width:600px){
+        .diagram{
+            margin-top:40px;
+        }
+        .d_cat{
+            font-size:10px;
+            line-height:1.1;
+            padding : 0 3px ;
+            
+        }
+        .d_con::before, .d_con::after, .d_con_2, .d_con_3, .d_con_4 {
+            display:none;
+        }
     }
 </style>
