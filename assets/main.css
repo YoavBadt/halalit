@@ -28,10 +28,7 @@ body{
   @media (min-width:600px){
     height:90vh;
   }
-  @media (max-width: 600px) {
-    /* min-height: 100vh; */
-    padding:40px 10px;
-  }
+  
 }
 
 .wrapper{
@@ -44,9 +41,7 @@ body{
     padding:0 20px;
   }
 
-  @media (max-width: 600px) and {
-    padding:0
-  }
+  
 
 }
 
@@ -61,19 +56,21 @@ body{
   column-gap: 40px;
   row-gap: 40px;
 
-  @media (max-width: 600px) {
-    display: initial;
-    /* grid-template-columns: 10px 1fr 10px; */
-    /* grid-template-rows: 10px 1fr 1fr 1fr 1fr 1fr 1fr 10px; */
-    /* column-gap: 0; */
-    /* row-gap: 0px; */
-  }
+
 }
 
 /* main_section / wrapper / section_grid */
 
 @media (max-width: 600px) {
-  
+  .main_section{
+    padding:40px 10px;
+  }
+  .wrapper{
+    padding:0;
+  }
+  .section_grid{
+    display: initial;
+  }
   
   
 }
@@ -106,9 +103,4 @@ a,
   }
 }
 
-main{
-  /* i think this is unused */
-  min-height:90vh;
-  padding-bottom:10vh;
 
-}

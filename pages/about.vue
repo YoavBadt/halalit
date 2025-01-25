@@ -35,6 +35,7 @@ export default {
     border:1px solid lightgrey;
     /* background-color: #f6f5f5; */
     border-radius:5px;
+
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -83,11 +84,20 @@ export default {
 
   }
 
-  /* @media (min-width: 1024px) {
-    .about {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
+  @media (max-width: 600px) {
+    .about_content{
+      display:inline-block;
+      border-radius:0;
+      height:auto;
+      margin-bottom:40px;
     }
-  } */
+    .about_txt{
+      padding:20px;
+      
+    }
+    .about_img_box{
+      
+      border-bottom:1px solid lightgrey
+    }
+  }
 </style>

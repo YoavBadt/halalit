@@ -65,4 +65,9 @@ export default {
         width:100%;
         text-align:center;
     }
+    @media (max-width:600px){
+        .content_contact{
+            padding:20px;
+        }
+    }
 </style>

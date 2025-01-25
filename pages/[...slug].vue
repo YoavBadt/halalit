@@ -103,4 +103,16 @@ export default {
         margin-bottom:2px;
         /* border-bottom: 1px solid #e1dddd; */
     }
+    @media(max-width:600px){
+        .cover_img_box{
+            padding-top:0px;
+            margin-bottom:40px;
+        }
+        .cover_img{
+            border-radius: 0px;
+        }
+        article{
+            padding: 0 20px;
+        }
+    }
 </style>

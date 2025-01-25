@@ -1,12 +1,12 @@
 <template>
         <Header title1="Our" title2="Projects"/>
         <div class="wrapper">
-        <main>
+        <main >
 
        
             <div class="projects_gallery">
                 <ContentList path="/projects" v-slot="{ list }">
-                    <div v-for="project in list" :key="project._path" class="project_box">
+                    <div class="project_box" v-for="project in list" :key="project._path" >
                         <RouterLink :to="project._path">
                             <div class="projects_img_box">
                                 <img class="projects_img" :src="project.cover">
@@ -35,6 +35,7 @@ export default {
 }
 </script>
 <style >
+    
     .projects_gallery{
         /* margin-top: 50px; */
         display:grid;
@@ -44,6 +45,7 @@ export default {
         column-gap: 20px;
         row-gap: 20px;
     }
+    
     .project_box{
         height: 400px;
         /* padding:10px; */
@@ -133,5 +135,27 @@ export default {
     .projects_button_2{
         width:50px;
         text-align:center;
+    }
+    @media (max-width: 600px) {
+        .projects_gallery{
+            padding: 20px;
+            display:initial;
+        }
+        .project_box{
+            margin:10px;
+            height: auto;
+        }
+        .projects_txt{
+            height:auto;
+            margin-bottom:20px;
+        }
+        .projects_headline{
+            margin:20px 10px 10px 10px;
+            line-height:25px;
+            /* font-size:3cqw; */
+        }
+        .projects_description{
+            padding:0px 10px;
+        }
     }
 </style>

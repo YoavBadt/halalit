@@ -14,6 +14,7 @@ export default {
 }
 </script>
 <style>
+
 .header_comp{
     width:100%;
     height:20vh;
@@ -37,6 +38,12 @@ export default {
     margin:0 auto;
     
   }
+  @media (max-width:600px){
+    .header_comp_headline{
+        text-align: center;
+        font-size:32px;
+    }
+    }
 .header_comp_headline span{
     font-weight: 600;
     /* color:violet */
