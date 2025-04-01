@@ -2,6 +2,8 @@
 :root{
   --main-txt: #464646;
   --main-yellow: #F9DB00;
+  --greyline: 1px solid lightgrey;
+  --offwhite :#ece8e8;
 }
 #app {
   width:100vw;

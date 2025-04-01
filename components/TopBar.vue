@@ -67,7 +67,7 @@ export default {
   position:sticky;
   top:0;
   
-  background-color: #ece8e8;
+  background-color: var(--offwhite);
   z-index:10;
   border-bottom:1px solid lightgrey;
 }

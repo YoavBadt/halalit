@@ -3,7 +3,8 @@
         <div class="wrapper ">
             <div class="section_grid">
                 <div class="main_hero_img_box">
-                  <img class="main_hero_img" src="/public/img/main/tryke_yellow.jpeg" />
+                  <!-- <img class="main_hero_img" src="/public/img/main/tryke_yellow.jpeg" /> -->
+                  <img class="main_hero_img" src="/public/img/main/tryke_white.png" />
                 </div>
                 <div class="main_hero_txt_box">
                     <h2 class="main_hero_headline">We are <br v-if="mobile"/>  Studio Halalit
@@ -80,6 +81,7 @@ export default {
     overflow:hidden;
     border-radius:10px;
     box-shadow: -0px 10px 25px 0px rgba(0,0,0,0.5);
+    background:var(--offwhite);
     @media (max-width: 600px) {
       position:absolute;
       bottom:0;
@@ -89,6 +91,24 @@ export default {
       box-shadow: none;
     }
   }
+
+  .main_hero_img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+    /* for yellow */
+    /* object-position: 30% 50%; */
+
+    /* for white */
+    object-position:55% 50%;
+
+    /* filter: saturate(0); */
+    /* mix-blend-mode: exclusion; */
+  }
+
+
+
   /* max width queries is less than MAX or equal */
   .main_hero_txt_box{
     grid-column: 3 / span 4;
@@ -107,14 +127,7 @@ export default {
   }
 
   
-  .main_hero_img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    object-position: 30% 50%;
-    /* filter: saturate(0); */
-    /* mix-blend-mode: exclusion; */
-  }
+ 
   
   .main_hero_headline{
     /* font-size: 2.6cqw; */
